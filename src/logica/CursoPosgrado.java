@@ -12,6 +12,18 @@ public class CursoPosgrado {
 	private Docente responsable;
 	private ArrayList<InscripcionCurso> inscripciones;
 	
+	
+	public CursoPosgrado(int id, String tema, String objetivos, int creditos, int anio, Docente responsable) {
+	    setId(id);
+	    setTema(tema);
+	    setObjetivos(objetivos);
+	    setCreditos(creditos);
+	    setAnio(anio);
+	    setResponsable(responsable);
+	    this.inscripciones = new ArrayList<>();
+	}
+	
+	
 	public int getId(){
 		return id;
 	}
